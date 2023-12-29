@@ -1,0 +1,63 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  color: #444444;
+  line-height: 1; }
+
+#buttons {
+  /* width: 50%; */ }
+  #buttons button {
+    background-color: #ccc;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 3px; }
+  #buttons .active {
+    background-color: yellow; }
+
+.result {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    .result {
+      flex-direction: column; } }
+
+.coin {
+  position: relative;
+  /* width: 25%; */ }
+
+.inv {
+  display: inline-block;
+  padding-bottom: 10px; }
+
+.widgets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  @media screen and (max-width: 768px) {
+    .widgets {
+      flex-direction: column;
+      gap: 0 10px;
+      justify-content: center; } }
+
+.tem {
+  font-size: 10px;
+  color: #666;
+  padding-top: 12px;
+  display: inline-block;
+  position: absolute;
+  left: 0; }
+
+.down {
+  color: red; }
+
+.up {
+  color: green; }
+
+/*# sourceMappingURL=style.css.map */

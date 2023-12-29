@@ -3,96 +3,52 @@
 
 <head>
 	<title>CRYPTOGraph</title>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Troféu Tele Santana">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
 	<script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
 
-	<style>
-		#buttons {
-			/* width: 50%; */
-		}
-
-		#buttons button {
-			background-color: #ccc;
-			font-weight: 700;
-			font-size: 12px;
-			padding: 3px;
-		}
-
-		#buttons .active {
-			background-color: yellow;
-		}
-
-		.result {
-			font-family: Helvetica, Arial, sans-serif;
-			font-size: 12px;
-			font-weight: bold;
-			padding: 5px 10px;
-			display: flex;
-			flex-direction: row;
-			gap: 5px;
-			justify-content: space-between;
-		}
-
-		.coin {
-			position: relative;
-			/* width: 25%; */
-		}
-
-		.inv {
-			display: inline-block;
-			padding-bottom: 10px;
-		}
-
-		.tem {
-			font-size: 10px;
-			color: #666;
-			padding-top: 12px;
-			display: inline-block;
-			position: absolute;
-			left: 0;
-		}
-
-		.down {
-			color: red;
-		}
-
-		.up {
-			color: green;
-		}
-	</style>
+	<link rel='stylesheet' id='theme-css-css' href='assets/css/style.css' type='text/css' media='screen' />
+	
 </head>
 
 <body>
 	<div class="livecoinwatch-widget-5" lcw-base="BRL" lcw-color-tx="#000000" lcw-marquee-1="movers" lcw-marquee-2="coins" lcw-marquee-items="10" lcw-platform="BC" ></div>
 	<?php
+
 	$t = 'd';
 	if ( isset( $_GET['t'] ) ) {
 		$t = $_GET['t'];
 	}
 
-
 		$currency = array(
-			'UNI' => 'SXP',
-			'SXP' => 'BNB',
+			'SOL' => '_NFP',
+			'_NFP' => 'SXP',
+			'SXP' => 'XRP',
+			'BTC' => 'ETH',
+			'ETH' => 'BNB',
 			'BNB' => 'BTC',
-			'BTC' => 'LTC',
-			'LTC' => 'BNB',
-			'ETH' => 'SXP',
-			'SHIB' => 'XRP',
+			'UNI' => 'LTC',
+			'LTC' => 'LNK',
 			'LINK' => 'UNI',
-			'SOL' => 'BTC',
+			'___QI' => 'XRP',
+			'XRP' => 'SXP',
+			'XLM' => 'XMR',
 		);
 
 	// $invest['BNB']['tem'] = 0.04506704;
 	// $invest['BNB']['inv'] = 63.40;
 
-	$invest['UNI']['tem'] = 2.76426789;
-	$invest['UNI']['inv'] = 100;
+	$invest['SOL']['tem'] = 0.1;
+	$invest['SOL']['inv'] = 53.33910391;
 
-	$invest['SXP']['tem'] = 54.07295111;
-	$invest['SXP']['inv'] = 100.01;
+	$invest['SXP']['tem'] = 26.57782612;
+	$invest['SXP']['inv'] = 55.9844194343906;
 
-	$invest['LTC']['tem'] = 0.26979554;
-	$invest['LTC']['inv'] = 100;
+	$invest['_NFP']['tem'] = 17.15305559;
+	$invest['_NFP']['inv'] = 90.67647665;
 
 	$invest['BTC']['tem'] = 0.00094256;
 	$invest['BTC']['inv'] = 200;
@@ -195,29 +151,16 @@
 				echo '
 					<div class="coin ' . $data['coin'] . '">
 						<span class="name">' . $data['coin'] . '</span>
-						<span class="inv';
-				if ( $data['varia'] < 0 ) {
-					echo ' down';
-				} else {
-					echo ' up';
-				}
-				echo '">R$' . number_format( $data['tenho'], 2, ',', '.' ) . '</span>
-						<span class="tem">R$' . $data['data']['inv'] . ' - ' . $data['data']['tem'] . '</span>
-						<span class="saldo';
-				if ( $data['varia'] < 0 ) {
-					echo ' down';
-				} else {
-					echo ' up';
-				}
-				echo '" id="invest_' . $data['coin'] . '">(' . number_format( $data['varia'], 2, ',', '.' ) . '%)</span>
+						<span class="inv' . color_class( $data['varia'] ) . '">R$' . number_format( $data['tenho'], 2, ',', '.' ) . '</span>
+						<span class="tem">R$' . number_format($data['data']['inv'],2,',','.') . ' - ' . $data['data']['tem'] . '</span>
+						<span class="saldo' . color_class( $data['varia'] ) . '" id="invest_' . $data['coin'] . '">(' . number_format( $data['varia'], 2, ',', '.' ) . '%)</span>
 					</div>';
-
 			}
 			?>
 		</div>
 		<?php
 		$beg_block = '
-		<div style="display: flex; flex-direction: row; justify-content: space-around;">';
+		<div class="widgets">';
 		$end_block = '
 		</div>';
 
@@ -238,17 +181,16 @@
 		echo $end_block;
 		?>
 	</div>
-	<script type="text/javascript">
-		[].forEach.call(
-			document.getElementsByTagName('button'),
-			function (b) {
-				b.addEventListener('click', function (ev) {
-					window.location.href = '?t=' + ev.target.value;
-				});
-			}
-		);
-	</script>
+	<script type="text/javascript" src="assets/js/main.js" id="main_js"></script>
 
 </body>
 
 </html>
+<?php
+	function color_class( $v ) {
+		if ( $v < 0 ) {
+			return ' down';
+		} else {
+			return ' up';
+		}
+	}
