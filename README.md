@@ -2,7 +2,7 @@
 
 This script start to follow my Crypto currencies bets.
 
-Using [LiveCoinWatch][https://livecoinwatch.com] widgets and API.
+Using [LiveCoinWatch](https://livecoinwatch.com) widgets and API.
 
 The objective is folllow preferrred crypto currencies and focus how is the investiment are returning, win and losses.
 
