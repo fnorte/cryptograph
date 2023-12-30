@@ -24,17 +24,17 @@
 	}
 
 		$currency = array(
-			'SOL' => '_NFP',
-			'_NFP' => 'BNB',
 			'BNB' => '_NFP',
+			'_NFP' => 'BNB',
+			'SOL' => '_NFP',
 
 			'BTC' => 'ETH',
 			'ETH' => 'BNB',
-			'UNI' => 'LTC',
-
+			'XLM' => 'ETH',
+			
 			'LTC' => 'LINK',
-			'LINK' => 'XLM',
-			'XLM' => 'LTC',
+			'LINK' => 'UNI',
+			'UNI' => 'LTC',
 		);
 
 	// $invest['BNB']['tem'] = 0.04506704;
