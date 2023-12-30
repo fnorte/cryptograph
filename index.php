@@ -30,7 +30,7 @@
 			
 			'BTC' => 'ETH',
 			'ETH' => 'BNB',
-			'SOL' => 'ETH',
+			'RUNE' => 'ETH',
 			
 			'LTC' => 'LINK',
 			'LINK' => 'UNI',
