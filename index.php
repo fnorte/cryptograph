@@ -40,8 +40,8 @@
 	// $invest['BNB']['tem'] = 0.04506704;
 	// $invest['BNB']['inv'] = 63.40;
 
-	$invest['SOL']['tem'] = 0.1;
-	$invest['SOL']['inv'] = 53.33910391;
+	$invest['XLM']['tem'] = 76.33684124;
+	$invest['XLM']['inv'] = 53.33910391;
 
 	$invest['BNB']['tem'] = 0.03266124;
 	$invest['BNB']['inv'] = 55.9844194343906;
