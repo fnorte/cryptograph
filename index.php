@@ -26,11 +26,11 @@
 		$currency = array(
 			'BNB' => '_NFP',
 			'_NFP' => 'BNB',
-			'SOL' => '_NFP',
-
+			'XLM' => 'BNB',
+			
 			'BTC' => 'ETH',
 			'ETH' => 'BNB',
-			'XLM' => 'ETH',
+			'SOL' => 'ETH',
 			
 			'LTC' => 'LINK',
 			'LINK' => 'UNI',
