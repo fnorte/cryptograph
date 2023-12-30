@@ -25,17 +25,17 @@
 
 		$currency = array(
 			'SOL' => '_NFP',
-			'_NFP' => 'SXP',
-			'SXP' => 'XRP',
+			'_NFP' => 'BNB',
+			'BNB' => '_NFP',
 			'BTC' => 'ETH',
 			'ETH' => 'BNB',
-			'BNB' => 'BTC',
 			'UNI' => 'LTC',
 			'LTC' => 'LNK',
 			'LINK' => 'UNI',
 			'___QI' => 'XRP',
 			'XRP' => 'SXP',
-			'XLM' => 'XMR',
+			'SXP' => 'XLM',
+			'XLM' => 'XRP',
 		);
 
 	// $invest['BNB']['tem'] = 0.04506704;
@@ -44,8 +44,8 @@
 	$invest['SOL']['tem'] = 0.1;
 	$invest['SOL']['inv'] = 53.33910391;
 
-	$invest['SXP']['tem'] = 26.57782612;
-	$invest['SXP']['inv'] = 55.9844194343906;
+	$invest['BNB']['tem'] = 0.03266124;
+	$invest['BNB']['inv'] = 55.9844194343906;
 
 	$invest['_NFP']['tem'] = 17.15305559;
 	$invest['_NFP']['inv'] = 90.67647665;
