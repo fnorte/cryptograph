@@ -27,14 +27,13 @@
 			'SOL' => '_NFP',
 			'_NFP' => 'BNB',
 			'BNB' => '_NFP',
+
 			'BTC' => 'ETH',
 			'ETH' => 'BNB',
 			'UNI' => 'LTC',
+
 			'LTC' => 'LNK',
 			'LINK' => 'UNI',
-			'___QI' => 'XRP',
-			'XRP' => 'SXP',
-			'SXP' => 'XLM',
 			'XLM' => 'XRP',
 		);
 
