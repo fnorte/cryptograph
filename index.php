@@ -37,8 +37,8 @@
 			'UNI' => 'LTC',
 		);
 
-	// $invest['BNB']['tem'] = 0.04506704;
-	// $invest['BNB']['inv'] = 63.40;
+	$invest['RUNE']['tem'] = 3.80723033;
+	$invest['RUNE']['inv'] = 100;
 
 	$invest['XLM']['tem'] = 76.33684124;
 	$invest['XLM']['inv'] = 53.33910391;
