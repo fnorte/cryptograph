@@ -140,7 +140,7 @@
 				'tenho' => $tt_win,
 				'inv' => $tt_inv,
 				'tem' => 0,
-				'data' => [ 'inv' => $tt_inv, 'tem' => number_format( ( $tt_win - $tt_inv ), 2, ',','.') ],
+				'data' => [ 'inv' => $tt_inv, 'tem' => 'R$ ' .number_format( ( $tt_win - $tt_inv ), 2, ',','.') ],
 			];
 			// echo "<pre>";
 			// var_dump( $investimentos );
