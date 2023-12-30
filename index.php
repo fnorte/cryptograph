@@ -32,9 +32,9 @@
 			'ETH' => 'BNB',
 			'UNI' => 'LTC',
 
-			'LTC' => 'LNK',
-			'LINK' => 'UNI',
-			'XLM' => 'XRP',
+			'LTC' => 'LINK',
+			'LINK' => 'XLM',
+			'XLM' => 'LTC',
 		);
 
 	// $invest['BNB']['tem'] = 0.04506704;
