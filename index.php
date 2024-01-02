@@ -37,20 +37,14 @@
 			'UNI' => 'LTC',
 		);
 
-	$invest['RUNE']['tem'] = 3.80723033;
-	$invest['RUNE']['inv'] = 100;
-
 	$invest['XLM']['tem'] = 76.33684124;
 	$invest['XLM']['inv'] = 53.33910391;
 
-	$invest['BNB']['tem'] = 0.03266124;
-	$invest['BNB']['inv'] = 55.9844194343906;
+	$invest['BNB']['tem'] = 0.10178415;
+	$invest['BNB']['inv'] = 155.9844194343906;
 
 	$invest['_NFP']['tem'] = 17.15305559;
 	$invest['_NFP']['inv'] = 90.67647665;
-
-	$invest['BTC']['tem'] = 0.00094256;
-	$invest['BTC']['inv'] = 200;
 
 
 	$coins = [];
